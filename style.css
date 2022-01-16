@@ -1,0 +1,932 @@
+:root {
+    --rose: #E7CDEB;
+    --noir: black;
+}
+
+* {  
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6e5f82;
+    overflow-x: hidden;
+    height: 100vh;
+    padding: 0;
+    margin:  0;
+   
+}
+
+h1 {
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+    font-size: max(3vw, 65px);
+    background: #FD79A8;
+    background: -moz-linear-gradient(top, #FD79A8 0%, #FFFFFF 50%, #F1C40F 100%);
+    background: -webkit-linear-gradient(top, #FD79A8 0%, #FFFFFF 50%, #F1C40F 100%);
+    background: linear-gradient(to bottom, #FD79A8 0%, #FFFFFF 50%, #F1C40F 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline #E7CDEB;
+    text-shadow: 1px 1px 2px #E7CDEB;
+    padding-left: 30px;
+}
+
+#police {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Tangerine', cursive;
+    color: #E7CEEA;
+    text-decoration: underline;
+    
+    
+}
+
+
+
+/*SURLIGNEMENT DES PARAGRAPHES*/
+#police::selection {
+    background-color: #746CA1;
+}
+
+a::selection {
+    background-color: #746CA1;
+}
+/*FIN SURLIGNEMENT DES PARAGRAPHES*/
+
+
+
+
+/*COULEURS DES LIENS*/
+a {
+    color: #E7CEEA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fab1a0;
+    transition: all ease 1s;
+}
+/*FIN DE LA COULEUR DES LIENS*/
+
+
+
+
+
+hr { 
+    height: 30px; 
+    border-style: solid; 
+    border-color: var(--rose); 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+    overflow: visible;
+    text-align: center;
+  } 
+  
+  
+  hr:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: var(--rose); 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+    font-size: 2em;
+  }
+  
+  hr:after {
+    background: #6e5f82;
+    content: '\262A';
+    padding: 0 4px;
+    position: relative;
+    top: -25px;
+    color: var(--rose);
+    font-size: 3em;
+    text-shadow: 1px 1px 2px;
+  
+  }
+
+
+/*JUSTE LA PHRASE FIGURINE*/
+#figurines { 
+    margin-left: 60px; 
+    text-transform: uppercase;
+    color: var(--rose);
+    font-size: 18px;
+    font-family: 'Parisienne', cursive;
+ }
+ /*FIN DE LA PHRASE*/
+
+
+
+/*LA BOX POUR LES FIGURINES*/
+.section__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 450px;
+    max-width: 600px;
+    background-color: var(--rose);
+    transform: translate(20px);
+    border: 5px dashed #786fa6;
+    border-radius: 21px 21px 21px 21px;
+    box-shadow: 1px 1px 2px var(--rose);
+}
+
+/*FIN DE LA BOX POUR LES FIGURINES*/
+
+
+.dimension {
+    width: calc(40% - 40px);
+    height: 200px;
+}
+
+
+/*LA BOX DE L'IMAGE*/
+.figurines1 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #c8afde;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+/*FIN DE LA BOX DE L'IMAGE*/
+
+
+
+.figurines1 img {
+    border-radius: 14px 14px 0px 0px;
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.figurines1:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+span {
+    color: #82589F;
+    font-family: 'Ephesis', cursive;
+
+}
+
+.achat {
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    background-color: #46056e;
+    padding: 3px 3px 3px 3px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-family: 'Ephesis', cursive;
+}
+
+
+
+/*CRÉATION DE LA DEUXIÈME BOX DE L'IMAGE*/
+.figurines2 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #2f034a;
+    padding: 5px;
+    margin: 7px 40px 30px 10px; 
+}
+
+.figurines2 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.figurines2:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+/*FIN DE LA CRÉATION DE LA DEUXIÈME BOX DE L'IMAGE*/
+
+
+.figurines3 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #16a085;
+    padding: 5px;
+    margin: 7px 40px 30px 10px; 
+}
+
+.figurines3 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.figurines3:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.figurines4 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #f0932b;
+    padding: 5px;
+    margin: 7px 40px 30px 10px; 
+}
+
+.figurines4 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.figurines4:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.figurines5 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #01a3a4;
+    padding: 5px;
+    margin: 7px 40px 30px 10px; 
+}
+
+.figurines5 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.figurines5:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+.figurines6 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #B33771;
+    padding: 5px;
+    margin: 7px 40px 30px 10px; 
+}
+
+.figurines6 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.figurines6:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+
+/*--------------------------------------*/
+
+/*COULEUR POUR CHACUN DES SPAN*/
+#saturne {
+    color: var(--rose);
+}
+
+#jupiter {
+    color: var(--noir);
+}
+
+#venus {
+    color: var(--noir);
+}
+
+#neptune {
+    color: var(--noir);
+}
+
+#mars {
+    color: var(--noir);
+}
+/*FIN DE LA COULEUR POUR CHACUN DES SPAN*/
+
+
+
+
+/*COULEUR DES BOUTONS.. ZZZ*/
+#couleur1 {
+    background-color: var(--rose);
+}
+
+#couleur2 {
+    background-color: #009432;
+}
+
+#couleur3 {
+    background-color: #e67e22;
+}
+
+#couleur4 {
+    background-color: #00cec9;
+}
+
+#couleur5 {
+    background-color: #c25385;
+}
+/*FIN DE LA COULEUR DES BOUTONS*/
+
+/*--------------------------------------*/
+
+#clothes {
+    margin-top: 155px;
+    margin-left: 50px;
+    color: var(--rose);
+    font-size: 18px;
+    font-family: 'Parisienne', cursive;
+    text-transform: uppercase;
+}
+
+.section__container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 495px;
+    max-width: 600px;
+    background-color: #87739c;
+    transform: translate(20px);
+    border: 5px double var(--rose);
+    border-radius: 21px 21px 21px 21px;
+    box-shadow: 1px 1px 2px var(--rose);
+}
+
+
+.shirt {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #b5aeae;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.shirt img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.shirt:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#tshirt {
+    color: var(--noir);
+}
+
+#couleur6 {
+    background-color: #8a8787;
+}
+/*------------------------------------------------------*/
+.shirt2 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #8a8787;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.shirt2 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.shirt2:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#blacklady {
+    color: black;
+}
+
+#couleur7 {
+    background-color: lightgray
+}
+/*------------------------------------------------------*/
+.shirt3 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: grey;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.shirt3 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.shirt3:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#luna {
+    color: black;
+}
+
+#couleur8 {
+    background-color: lightgray;
+}
+/*------------------------------------------------------*/
+.shirt4 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: grey;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.shirt4 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.shirt4:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#sailorjupiter {
+    color: var(--noir);
+}
+
+#couleur9 {
+    background-color: lightgray;
+}
+/*------------------------------------------------------*/
+.shirt5 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #b5aeae;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.shirt5 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.shirt5:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#crystallunaire {
+    color: var(--noir);
+}
+
+#couleur10 {
+    background-color: #a3a2a0;
+}
+/*------------------------------------------------------*/
+.shirt6 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #a3a3a3;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.shirt6 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.shirt6:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#crop {
+    color: var(--noir);
+}
+
+#couleur11 {
+   background-color: gray;
+}
+/*------------------------------------------------------*/
+#jewelry {
+    color: var(--rose);
+    text-transform: uppercase;
+    margin-top: 155px;
+    margin-left: 50px;
+    font-size: 18px;
+    font-family: 'Parisienne', cursive;
+}
+
+.section__container3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 495px;
+    max-width: 600px;
+    background-color: #6a5d7a;
+    transform: translate(20px);
+    border: 5px dotted var(--rose);
+    border-radius: 21px 21px 21px 21px;
+    box-shadow: 1px 1px 2px var(--rose);
+}
+
+.badge {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #f7ebeb;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.badge img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#badge2 {
+     color: #cfb4c3;
+}
+
+#couleur12 {
+    background-color: #c29bb6;
+    color: #856b7d;
+}
+/*------------------------------------------------------*/
+.collier {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #74628c;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.collier img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.collier:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#collier2 {
+    color: var(--rose);
+}
+
+#couleur13 {
+    color: black;
+    color: var(--rose);
+    background-color: #8d7da1;
+}
+/*------------------------------------------------------*/
+.collier3 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #a9a4b0;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.collier3 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.collier3:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#collier33 {
+    color: #7a686e;
+}
+
+#couleur14 {
+    background-color: #918989;
+    color: #4d4646;
+}
+/*------------------------------------------------------*/
+.collier4 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #918989;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.collier4 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.collier4:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#collier44 {
+    color: var(--noir);
+}
+
+#couleur15 {
+    background-color: grey;
+}
+/*------------------------------------------------------*/
+.collier5 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #74b9ff;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.collier5 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.collier5:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#collier55 {
+    color: #3e67c7;
+}
+
+#couleur16 {
+    background-color: #2b58c2;
+    color: black;
+}
+/*------------------------------------------------------*/
+.collier7 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    background-color: #DFDEDE;
+    padding: 5px;
+    margin: 7px 40px 30px 10px;
+}
+
+.collier7 img {
+    height: 100px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.collier7:hover {
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+
+#collier77 {
+    color: #918e8e;
+}
+
+#couleur17 {
+    background-color: grey;
+    color: #b8b6b6;
+}
+/*-----------------------------------------------*/
+footer {
+    width: 100%;
+} /*juste pour que ça prenne toute la largeur de la page*/
+
+.container__footer {
+    height: 100px;
+    background-color: #635675;
+    margin-top: 200px;
+    border: 2px dotted var(--rose);
+    border-radius: 5px;
+}
+
+footer img {
+    height: 100px;
+    float: left;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    font-family: 'Tangerine', cursive;
+    text-transform: uppercase;
+    list-style-type: none;
+    text-decoration: underline;
+    margin-top: 70px;      
+    color: var(--rose);
+    cursor: pointer;
+}
+
+ul li {
+    margin-right: 100px;
+}
+
+ul li::selection {
+    color: #fd79a8;
+}
+
+ul li:hover {
+    color: #786fa6;
+    text-decoration: underline;
+}
+/*-----------------------------------------------*/
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .dimension {
+        width: calc(40% - 40px);
+   }
+    
+    .achat { 
+        margin-left: 3%;
+        padding: 2px;
+    }
+
+    .section__container {
+        height: 495px;
+    }
+    
+    .figurines1 {
+        height: 115%;
+        width: 100%;
+    }
+
+    .figurines2 {
+        height: 115%;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .figurines3 {
+        height: 115%;
+        width: 100%;
+        margin-left: 45px;
+    }
+    
+    .figurines4 {
+        height: 111%;
+        width: 100%
+    }
+
+    .figurines5 {
+        height: 111%;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .figurines6 {
+        height: 111%;
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .section__container2 {
+        height: 590px;
+    }
+
+    .shirt {
+        height: 125%;
+        width: 100%;
+    }
+
+    .shirt2 {
+        height: 125%;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .shirt3 {
+        height: 125%;
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .shirt4 {
+        height: 125%;
+        width: 100%;
+    }
+
+    .shirt5 {
+        height: 125%;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .shirt6 {
+        height: 139%;
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .section__container3 {
+        height: 520px;
+    }
+    
+    .badge {
+        height: 135%;
+        width: 100%;
+    }
+
+    .collier {
+        height: 125%;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .collier3 {
+        height: 125%;
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .collier4 {
+        height: 125%;
+        width: 100%;
+    }
+
+    .collier5 {
+        height: 125%;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .collier7 {
+        height: 125%;
+        width: 100%;
+        margin-left: 45px;
+    }
+
+    .container__footer {
+        height: 100%;
+        width: 100%;
+    }
+   
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0px 0px 10px;
+        padding: 0;
+    }
+
+    ul li {
+        margin-top: 5px;
+    }
+
+    
+
+}
+
+
+
+/* ()()                ____ 
+ (..)               /|o  |
+ /\/\  FINI :-)    /o|  o|
+c\db/o............/o_|_o_|
+            
+/*RESPONSIVE : FAIRE SON CSS EN FONCTION DE LA RESPONSIVE...*/
+
+
+
