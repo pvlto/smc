@@ -20,16 +20,17 @@ h1 {
     font-family: Snell Roundhand, cursive;
     text-align: center;
     font-size: max(3vw, 65px);
-    background: #FD79A8;
-    background: -moz-linear-gradient(top, #FD79A8 0%, #FFFFFF 50%, #F1C40F 100%);
     background: -webkit-linear-gradient(top, #FD79A8 0%, #FFFFFF 50%, #F1C40F 100%);
     background: linear-gradient(to bottom, #FD79A8 0%, #FFFFFF 50%, #F1C40F 100%);
     background-clip: text;
+    -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline #E7CDEB;
+    -webkit-text-decoration: underline var(--rose);
     text-shadow: 1px 1px 2px #E7CDEB;
     padding-left: 30px;
 }
+
 
 #police {
     text-align: center;
